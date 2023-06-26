@@ -6,4 +6,18 @@
     </style>
 
     <style name="Theme.Lunchbox" parent="Base.Theme.Lunchbox" />
+
+    <style name="ThemeOverlay.Lunchbox.FullscreenContainer" parent="">
+        <item name="fullscreenBackgroundColor">@color/light_blue_600</item>
+        <item name="fullscreenTextColor">@color/light_blue_A200</item>
+    </style>
+
+    <style name="Theme.Lunchbox.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Lunchbox.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Lunchbox.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

@@ -4,20 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/school"
+    android:background="@drawable/background"
     android:orientation="vertical"
     tools:context=".Schoolpage">
 
-    <ImageButton
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_gravity="right"
-        android:background="#00ffffff"
-        android:src="@drawable/homebutton"
-        android:onClick="gomainpage"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/maintitle4"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"/>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="30dp">
+
 
     <ImageButton
-        android:layout_marginTop="100dp"
+        android:layout_marginLeft="40dp"
+
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -27,26 +35,7 @@
         android:onClick="schoolinfo"/>
 
     <ImageButton
-        android:layout_marginTop="100dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:background="#00ffffff"
-        android:src="@drawable/schoolocate"
-        android:textSize="24dp"
-        android:onClick="schoolocate"
-        />
-
-    <ImageButton
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_gravity="right"
-        android:background="#00ffffff"
-        android:src="@drawable/homebutton" />
-
-    <ImageButton
-        android:layout_marginTop="100dp"
+        android:layout_marginLeft="40dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -54,18 +43,46 @@
         android:background="#00ffffff"
         android:src="@drawable/schoolclass"
         android:textSize="24dp"
-        android:onClick="schoolclass"/>/>
+        android:onClick="schoolclass"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
 
     <ImageButton
-        android:layout_marginTop="100dp"
+        android:layout_marginLeft="40dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:gravity="center"
         android:background="#00ffffff"
         android:src="@drawable/schoolweb"
-        android:gravity="center"
         android:textSize="24dp"
-        android:onClick="schoolweb"/>
+        android:onClick="schoolweb"/>/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:background="#00ffffff"
+            android:gravity="center"
+            android:onClick="schoolocate"
+            android:src="@drawable/schoolocate"
+            android:textSize="24dp" />
+    </LinearLayout>
+    <ImageButton
+        android:layout_marginTop="225dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#00ffffff"
+        android:onClick="gomainpage"
+        android:src="@drawable/homebutton" />
 
 
 </LinearLayout>

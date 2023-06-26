@@ -4,22 +4,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center_vertical"
+    android:background="@drawable/background"
     android:orientation="vertical"
-    android:background="@drawable/school"
     tools:context=".Lunchrandom">
-    <ImageButton
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_gravity="right"
-        android:background="#00ffffff"
-        android:src="@drawable/homebutton"
-        android:onClick="gomainpage"/>
+
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/random_maintitle"
         android:layout_gravity="center"
-        android:background="#00ffffff"/>
+        android:background="#00ffffff"
+        android:src="@drawable/random_maintitle" />
 
     <ImageView
         android:id="@+id/diceImageView"
@@ -28,29 +22,45 @@
         android:layout_gravity="center_horizontal"
         android:src="@drawable/lunchbox" />
 
-    <ImageButton
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:src="@drawable/random_gameinfo"
-        android:background="#00ffffff"
-        android:layout_marginBottom="60dp"
-        />
-    <ImageButton
-        android:layout_width="wrap_content"
+        android:src="@drawable/random_foodinfo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:src="@drawable/random_gamestart"
-        android:background="#00ffffff"
-        android:layout_marginBottom="60dp"
-        android:onClick="gamestart"
-        android:id="@+id/rollButton"
-        />
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:src="@drawable/random_gameagain"
-        android:background="#00ffffff"/>
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="55dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#00ffffff"
+            android:src="@drawable/random_gameinfo" />
+
+        <ImageButton
+            android:id="@+id/rollButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:background="#00ffffff"
+            android:onClick="gamestart"
+            android:src="@drawable/random_gamestart" />
 
     </LinearLayout>
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#00ffffff"
+        android:onClick="gomainpage"
+        android:src="@drawable/homebutton" />
+
+</LinearLayout>

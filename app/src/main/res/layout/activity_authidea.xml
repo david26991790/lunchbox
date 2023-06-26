@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".authideaActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/authidea"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/lunchword"
+        android:textSize="20sp"
+        android:text="        這次的專案靈感來源:
+
+老師提及程式的起源來自於解決生活中重複且無聊的問題,
+
+電腦程式最擅長做重複的活動。"
+/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/lunchword"
+        android:textSize="20sp"
+        android:text="        於是我開始思考我在上課期間遇到甚麼重複，且一直遇到的問題，
+
+於是我想到了每天都會遇到的午餐選擇問題，每天至少吃掉我快40分鐘去思考到底要吃啥，
+
+加上剛開始學程式會需要寫隨機選數字之類的練習，
+
+兩相結合就產生了這個App。"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/lunchword"
+        android:textSize="20sp"
+        android:text="        用這個App每天省40分鐘簡直大賺，
+
+希望大家玩得愉快。"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="250dp"
+        android:background="#00ffffff"
+        android:onClick="gomainpage"
+        android:src="@drawable/homebutton" />
+        />
+</LinearLayout>
