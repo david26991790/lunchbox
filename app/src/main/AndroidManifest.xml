@@ -16,7 +16,7 @@
         android:theme="@style/Theme.Lunchbox"
         tools:targetApi="31">
         <activity
-            android:name=".scrollActivity"
+            android:name=".ScrollActivity"
             android:exported="false" />
         <activity
             android:name=".gameinfoActivity"
@@ -29,9 +29,6 @@
             android:exported="false" />
         <activity
             android:name=".Credits"
-            android:exported="false" />
-        <activity
-            android:name=".Lunchlist"
             android:exported="false" />
         <activity
             android:name=".Schoolpage"
@@ -48,17 +45,10 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
-
                 <category android:name="android.intent.category.DEFAULT" />
-
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <service android:name=".BackgroundMusicService" />
     </application>
 
 </manifest>

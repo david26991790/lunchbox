@@ -41,7 +41,7 @@
             android:layout_gravity="top"
             android:background="#00ffffff"
             android:src="@drawable/maintitle2"
-            android:onClick="golunch"/>
+            android:onClick="goscroll"/>
 
         <ImageButton
             android:layout_width="wrap_content"
