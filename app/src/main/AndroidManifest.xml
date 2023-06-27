@@ -16,7 +16,7 @@
         android:theme="@style/Theme.Lunchbox"
         tools:targetApi="31">
         <activity
-            android:name=".scrollActivity"
+            android:name=".ScrollActivity"
             android:exported="false" />
         <activity
             android:name=".gameinfoActivity"
@@ -57,8 +57,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <service android:name=".BackgroundMusicService" />
+        />
     </application>
 
 </manifest>
