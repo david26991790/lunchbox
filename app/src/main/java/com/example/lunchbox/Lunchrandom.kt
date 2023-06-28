@@ -1,4 +1,5 @@
 package com.example.lunchbox
+
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
 import android.animation.AnimatorSet
@@ -10,12 +11,14 @@ import android.view.View
 import android.view.animation.AccelerateDecelerateInterpolator
 import android.widget.ImageButton
 import android.widget.ImageView
+import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import java.util.Random
 
 
 class Lunchrandom : AppCompatActivity() {
-
+    private lateinit var foodNameTextView: TextView
     private lateinit var diceImageView: ImageView
     private lateinit var rollButton: ImageButton
     private val diceImages = arrayOf(
@@ -23,6 +26,13 @@ class Lunchrandom : AppCompatActivity() {
         R.drawable.breakfastshop,
         R.drawable.hambuergershop,
         R.drawable.toastshop,
+    )
+    private val foodNames = arrayOf(
+        "蕭家牛肉麵",
+        "呷尚寶",
+        "弘爺漢堡",
+        "吐司覺得熱",
+        "東石便當"
     )
     private var isRolling = false
     private var currentImageIndex = 0
@@ -33,6 +43,7 @@ class Lunchrandom : AppCompatActivity() {
 
         diceImageView = findViewById(R.id.diceImageView)
         rollButton = findViewById(R.id.rollButton)
+        foodNameTextView = findViewById(R.id.foodname)
         rollButton.setOnClickListener {
             if (!isRolling) {
                 rollDice()
@@ -67,6 +78,7 @@ class Lunchrandom : AppCompatActivity() {
                     isRolling = false
                     currentImageIndex = 0
                     fadeInAnimator.start()
+                    showFoodName(randomIndex)
                 }
             }
         })
@@ -74,12 +86,14 @@ class Lunchrandom : AppCompatActivity() {
         diceImageView.setImageResource(diceImages[currentImageIndex])
         animatorSet.start()
     }
-    fun go_mainpage() {
-        var intent = Intent(this, MainPage::class.java)
+
+    fun goMainPage(v: View) {
+        val intent = Intent(this, MainPage::class.java)
+        startActivity(intent)
     }
 
-    fun gomainpage(v: View) {
-        var intent = Intent(this, MainPage::class.java)
-        startActivity((intent))
+    fun showFoodName(index: Int) {
+        val foodName = foodNames[index]
+        foodNameTextView.text = foodName
     }
 }

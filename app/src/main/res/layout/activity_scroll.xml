@@ -1,21 +1,182 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="@drawable/background"
     tools:context=".ScrollActivity">
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scrollbarStyle="insideOverlay"
-        android:scrollbars="vertical">
 
-    <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:src="@drawable/beefnoodlesshop"
-        android:background="@drawable/lunchbackground"/>
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-    </ScrollView>
+        <TextView
+            android:id="@+id/restaurantName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lunchtitlebackground"
+            android:fontFamily="@font/lunchword"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:gravity="center"
+            android:text="蕭家牛肉麵" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:background="@drawable/lunchbackground"
+            android:src="@drawable/beefnoodlesmenu"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:padding="16dp" />
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:background="@drawable/lunchbackground"
+            android:src="@drawable/beefnoodlesshop"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:padding="16dp" />
+        </LinearLayout>
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lunchtitlebackground"
+            android:fontFamily="@font/lunchword"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:gravity="center"
+            android:text="吐司覺得熱" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="250dp"
+                android:background="@drawable/lunchbackground"
+                android:src="@drawable/toastmenu"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:padding="16dp" />
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="250dp"
+                android:background="@drawable/lunchbackground"
+                android:src="@drawable/toastshop"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:padding="16dp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lunchtitlebackground"
+            android:fontFamily="@font/lunchword"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:gravity="center"
+            android:text="弘爺漢堡" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="250dp"
+                android:background="@drawable/lunchbackground"
+                android:src="@drawable/hambuergermenu"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:padding="16dp" />
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="250dp"
+                android:background="@drawable/lunchbackground"
+                android:src="@drawable/hambuergershop"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:padding="16dp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lunchtitlebackground"
+            android:fontFamily="@font/lunchword"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:gravity="center"
+            android:text="呷尚寶" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="250dp"
+                android:background="@drawable/lunchbackground"
+                android:src="@drawable/breakfastmenu"
+                android:scaleType="fitStart"
+                android:adjustViewBounds="true"
+                android:padding="16dp" />
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="250dp"
+                android:background="@drawable/lunchbackground"
+                android:src="@drawable/breakfastfood"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:padding="16dp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lunchtitlebackground"
+            android:fontFamily="@font/lunchword"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:gravity="center"
+            android:text="東石便當" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="250dp"
+                android:background="@drawable/lunchbackground"
+                android:src="@drawable/beefnoodlesmenu"
+                android:scaleType="fitStart"
+                android:adjustViewBounds="true"
+                android:padding="16dp" />
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="250dp"
+                android:background="@drawable/lunchbackground"
+                android:src="@drawable/beefnoodlesshop"
+                android:scaleType="fitStart"
+                android:adjustViewBounds="true"
+                android:padding="16dp" />
+        </LinearLayout>
+        <ImageButton
+            android:layout_marginTop="225dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#00ffffff"
+            android:onClick="go_mainpage"
+            android:src="@drawable/homebutton" />
+
+
+    </LinearLayout>
+</ScrollView>

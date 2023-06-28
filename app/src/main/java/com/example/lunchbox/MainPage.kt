@@ -11,48 +11,33 @@ class MainPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        music()
+    }
+    fun music() {
+        val intent = Intent(this, MusicService::class.java)
+        startService(intent)
     }
 
 
 
-    fun go_random() {
+    fun go_random(v: View) {
         startActivity(Intent(this, Lunchrandom::class.java))
     }
 
-    fun gorandom(v: View) {
-        go_random()
-    }
-
-    fun go_school() {
+    fun go_school(v: View) {
         startActivity(Intent(this, Schoolpage::class.java))
     }
 
-    fun goschool(v: View) {
-        go_school()
-    }
-
-    fun go_lunch() {
+    fun go_scroll(v: View) {
         startActivity(Intent(this, ScrollActivity::class.java))
     }
 
-    fun golunch(v: View) {
-        go_lunch()
-    }
-
-    fun go_auth() {
+    fun go_auth(v: View) {
         startActivity(Intent(this, AuthPage::class.java))
     }
 
-    fun goauth(v: View) {
-        go_auth()
-    }
-
-    fun go_credit() {
+    fun go_credit(v: View) {
         startActivity(Intent(this, Credits::class.java))
     }
 
-    fun gocredit(v: View) {
-        go_credit()
-    }
 }

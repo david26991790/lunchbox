@@ -42,9 +42,5 @@ class Schoolpage : AppCompatActivity() {
         var intent = Intent(this, MainPage::class.java)
     }
 
-    fun gomainpage(v: View) {
-        var intent = Intent(this, MainPage::class.java)
-        startActivity((intent))
-    }
 
 }

@@ -15,6 +15,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Lunchbox"
         tools:targetApi="31">
+        <service
+            android:name=".MusicService"
+            android:enabled="true"
+            android:exported="true"></service>
+
         <activity
             android:name=".ScrollActivity"
             android:exported="false" />
@@ -57,7 +62,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        />
     </application>
 
 </manifest>

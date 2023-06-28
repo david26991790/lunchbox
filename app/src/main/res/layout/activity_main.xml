@@ -15,7 +15,7 @@
         android:layout_marginTop="120dp"
         android:gravity="center"
         android:src="@drawable/maintitle"
-        android:onClick="gorandom"
+        android:onClick="go_random"
         android:textSize="24dp"
         />
 
@@ -25,7 +25,6 @@
         android:layout_gravity="center"
         android:layout_marginTop="110dp"
         android:background="#00ffffff"
-        android:onClick="gorandom"
         android:src="@drawable/maintitle1" />
 
     <LinearLayout
@@ -41,7 +40,7 @@
             android:layout_gravity="top"
             android:background="#00ffffff"
             android:src="@drawable/maintitle2"
-            android:onClick="golunch"/>
+            android:onClick="go_scroll"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -50,7 +49,7 @@
             android:layout_marginLeft="50dp"
             android:background="#00ffffff"
             android:src="@drawable/maintitle3"
-            android:onClick="gocredit"/>
+            android:onClick="go_credit"/>
     </LinearLayout>
 
     <LinearLayout
@@ -66,7 +65,7 @@
             android:layout_gravity="center"
             android:background="#00ffffff"
             android:src="@drawable/maintitle4"
-            android:onClick="goschool"/>
+            android:onClick="go_school"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -75,7 +74,7 @@
             android:layout_marginLeft="50dp"
             android:background="#00ffffff"
             android:src="@drawable/maintitle5"
-            android:onClick="goauth"
+            android:onClick="go_auth"
             />
     </LinearLayout>
 

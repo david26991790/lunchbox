@@ -81,7 +81,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:background="#00ffffff"
-        android:onClick="gomainpage"
+        android:onClick="go_mainpage"
         android:src="@drawable/homebutton" />
 
 
