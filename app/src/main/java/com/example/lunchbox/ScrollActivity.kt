@@ -15,6 +15,7 @@ class ScrollActivity : AppCompatActivity() {
     }
     fun go_mainpage(v: View) {
         var intent = Intent(this, MainPage::class.java)
+        startActivity(intent)
     }
 
 }
