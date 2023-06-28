@@ -30,7 +30,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:src="@drawable/random_foodinfo" />
+        android:src="@drawable/random_foodinfo"
+        android:onClick="go_scroll"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -44,7 +45,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="#00ffffff"
-            android:src="@drawable/random_gameinfo" />
+            android:src="@drawable/random_gameinfo"
+            android:onClick="go_gameinfo"/>
 
         <ImageButton
             android:id="@+id/rollButton"

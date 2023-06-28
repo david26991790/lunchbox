@@ -96,4 +96,12 @@ class Lunchrandom : AppCompatActivity() {
         val foodName = foodNames[index]
         foodNameTextView.text = foodName
     }
+    fun go_gameinfo(v: View) {
+        val intent = Intent(this, gameinfoActivity::class.java)
+        startActivity(intent)
+    }
+    fun go_scroll(v: View) {
+        val intent = Intent(this, gameinfoActivity::class.java)
+        startActivity(intent)
+    }
 }

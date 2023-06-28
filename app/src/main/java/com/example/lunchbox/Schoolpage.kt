@@ -12,6 +12,12 @@ class Schoolpage : AppCompatActivity() {
         setContentView(R.layout.activity_schoolpage)
 
     }
+    fun schooldef(v: View) {
+        val uri = Uri.parse("https://www.tvdi.gov.taipei/")
+        val intent = Intent(Intent.ACTION_VIEW, uri)
+        startActivity(intent)
+
+    }
 
     fun schoolinfo(v: View) {
         val uri = Uri.parse("https://www.tvdi.gov.taipei/Content_List.aspx?n=F4A8038F76E551B9")
