@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.annotation.RequiresApi
+import androidx.core.content.ContextCompat
 
 class MainPage : AppCompatActivity() {
 
@@ -15,7 +16,7 @@ class MainPage : AppCompatActivity() {
     }
     fun music() {
         val intent = Intent(this, MusicService::class.java)
-        startService(intent)
+        ContextCompat.startForegroundService(this, intent)
     }
 
 

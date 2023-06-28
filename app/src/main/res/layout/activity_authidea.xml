@@ -55,7 +55,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="250dp"
         android:background="#00ffffff"
-        android:onClick="gomainpage"
+        android:onClick="go_mainpage"
         android:src="@drawable/homebutton" />
         />
 </LinearLayout>

@@ -9,7 +9,7 @@ class authideaActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_authidea)
     }
-    fun gomainpage(v: View) {
+    fun go_mainpage(v: View) {
         var intent = Intent(this, MainPage::class.java)
         startActivity((intent))
     }

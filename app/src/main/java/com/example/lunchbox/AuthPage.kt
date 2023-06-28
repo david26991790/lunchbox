@@ -10,12 +10,8 @@ class AuthPage : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_authpage)
     }
-    fun go_mainpage() {
-        var intent = Intent(this, MainPage::class.java)
-        startActivity(intent)
-    }
 
-    fun gomainpage(v: View) {
+    fun go_mainpage(v: View) {
         var intent = Intent(this, MainPage::class.java)
         startActivity(intent)
     }

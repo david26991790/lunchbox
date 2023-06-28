@@ -87,7 +87,7 @@ class Lunchrandom : AppCompatActivity() {
         animatorSet.start()
     }
 
-    fun goMainPage(v: View) {
+    fun go_mainPage(v: View) {
         val intent = Intent(this, MainPage::class.java)
         startActivity(intent)
     }

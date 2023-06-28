@@ -13,7 +13,7 @@ class Credits : AppCompatActivity() {
         var intent = Intent(this, MainPage::class.java)
     }
 
-    fun gomainpage(v: View) {
+    fun go_mainpage(v: View) {
         var intent = Intent(this, MainPage::class.java)
         startActivity((intent))
     }
