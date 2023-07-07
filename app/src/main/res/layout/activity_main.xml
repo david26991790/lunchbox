@@ -14,7 +14,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="120dp"
         android:gravity="center"
-        android:src="@drawable/maintitle"
+        android:src="@drawable/maintitle1"
         android:onClick="go_random"
         android:textSize="24dp"
         />
@@ -25,7 +25,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="110dp"
         android:background="#00ffffff"
-        android:src="@drawable/maintitle1" />
+        android:src="@drawable/maintitle" />
 
     <LinearLayout
         android:layout_width="match_parent"
